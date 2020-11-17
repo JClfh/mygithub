@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="box"></div>
+		</div>
+	</body>
+	<style>
+		.container {
+			height: 600px;
+			width: 600px;
+			border: 1px solid black;
+			/* position: absolute; */
+			/* display: flex; */
+			position: relative;
+		}
+/* 
+				.box {
+			width: 300px;
+			height: 300px;
+			background-color: blue;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+			margin-left: -150px;
+		} */
+		.box{
+			width: 300px;
+			height: 300px;
+			background-color: blue;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			 transform: translate(-50%, -50%);
+		}
+/* 		.box {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 300px;
+			height: 300px;
+			background-color: blue;
+			margin:auto;
+		}
+
+		/* 		.container{
+			   width: 100px;
+			            height: 100px;
+			            border: 1px solid blue;
+			
+			            /*让标签元素以表格单元格形式呈现，类似于td标签，主要是利用它的特殊属性：
+			            元素垂直居中对齐，但其会被float、position:absolute、
+			            所以尽量不要与其同用，设置了display：table-cell的元素对宽度高度敏感，
+			            对margin值无反应，所以页面上出现在了左边，我就不想再在外面加调了哈，
+			            但会响应padding属性，基本和td标签无异*/
+		/* display: table-cell;/* 使子div垂直居中 */
+		*/
+		/* vertical-align:middle;/* 再对子div设置水平居中 */
+		*/
+		/* } */
+		/* 		.box{
+			     width: 50px;
+			            height: 50px;
+			            background: blue;
+			            margin:0 auto;
+		} */
+	</style>
+</html>

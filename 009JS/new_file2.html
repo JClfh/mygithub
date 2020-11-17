@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		function getRandom(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + 1;
+		}
+		var a = getRandom(0, 10);
+		console.log(a);
+	var i=0;
+	var j = 3;	
+		while (i!=3) {
+			
+			var num = prompt('你来猜 0-10中的数字，你还有'+j+'次机会');
+			if (num >a) {
+				alert('你猜大了');
+				// i++;
+				// j = j - i;
+			} else if (num < a) {
+				alert('你猜小了');
+				// i++;
+				// j = j - i;
+			} else {
+				alert('你猜对了');
+				break;
+			}
+	            i++;
+				j--;
+		
+		}
+			alert('没有机会拉');
+	</script>
+</html>

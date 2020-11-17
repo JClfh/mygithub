@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				width:100vw;
+				height: 100vh;
+				background-color: #34495e;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.heart{
+				width: 200px;
+				height: 200px;
+				background-color: #FF0000;
+				transform: rotate(45deg) scale(.5);
+				animation-name: hd;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes hd{
+				25%{
+					transform: rotate(45deg) scale(1);
+				}
+				50%{
+					transform: rotate(45deg) scale(2);
+				}
+				75%{
+					ransform: rotate(45deg) scale(1);
+				}
+				85%{
+					ransform: rotate(45deg) scale(0.5);
+				}
+				to{
+					ransform: rotate(45deg) scale(1);
+				}
+			}
+			.heart::before{
+				content: '';
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				position: absolute;
+				background-color: #FF0000;
+				transform:translateX(-100px);
+			}
+			.heart::after{
+				content: '';
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				position: absolute;
+				background-color: #FF0000;
+				transform:translateY(-100px);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="heart">
+				
+			</div>
+		</main>
+	</body>
+</html>

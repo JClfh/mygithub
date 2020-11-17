@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+		<style>
+			body{
+				width:100vw;
+				height: 100vh;
+				background-color: #34495e;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+			}
+			ul{
+				list-style: none;
+				width: 400px;
+				height: 200px;
+				display:flex;
+				justify-content: center;
+				align-items: center;
+			}
+			li{
+				flex: 1;
+				color: red;
+				display:flex;
+				justify-content: center;
+			
+			}
+			i.fa{
+				font-size: 3em;
+				animation-name: hd;
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				position: absolute;
+			}
+			li:nth-child(1)>i{
+				animation-direction: normal;
+			}
+			li:nth-child(2)>i{
+				animation-direction: reverse;/* 慢慢回去 */
+			}
+			li:nth-child(3)>i{
+				animation-direction: alternate;/* 慢慢出来，慢慢回去 */
+			}
+			@keyframes hd{
+		to{
+			transform: scale(3);
+		}
+			}
+	
+		</style>
+	</head>
+	<body>
+	<ul>
+		<li>
+		<i class="fa fa-heart"></i>
+		</li>
+		<li>
+		<i class="fa fa-heart"></i>
+		</li>
+		<li>
+		<i class="fa fa-heart"></i>
+		</li>
+	</ul>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.container {
+				height: 150px;
+				background-color: pink;
+				margin: 0 auto;
+			}
+
+			/*超小屏幕下 小于768 布局容器的宽度为100% */
+			@media screen and (max-width:767px) {
+				.container {
+					width: 100%;
+				}
+			}
+
+			/*小屏幕下 大于等于768 布局容器的宽度为750px */
+			@media screen and (min-width:768px) {
+				.container {
+					width: 750px;
+				}
+			}
+
+			/*中等屏幕下 大于等于992 布局容器的宽度为970px */
+			@media screen and (min-width:992px) {
+				.container {
+					width: 970px;
+				}
+			}
+			/*大屏幕下 大于等于1200 布局容器的宽度为1170px */
+			@media screen and (min-width:1200px) {
+				.container {
+					width: 1170px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container"></div>
+	</body>
+</html>

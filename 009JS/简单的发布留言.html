@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		textarea{
+			width: 400px;
+			height: 300px;
+		}
+		ul li{
+			width: 400px;
+			margin: 10px;
+			background-color: #008000;
+		}
+		li a{
+			float: right;
+		}
+	</style>
+	<body>
+		<textarea name="" id=""></textarea>
+		<button type="button">发布</button>
+		<ul>
+			
+		<ul>
+	</body>
+	<script type="text/javascript">
+		var btn =document.querySelector('button');
+		var text =document.querySelector('textarea');
+		var ul =document.querySelector('ul');
+		var data =new Date();
+		btn.onclick =function(){
+			if(text.value==''){
+				alert('请输入内容');
+			}else{
+				var li =document.createElement('li');
+				li.innerHTML='发布时间'+data+'<br>'+text.value+"<a href='javascript:;'>删除</a>";
+				ul.insertBefore(li,ul.children[0]);
+				text.value=null;
+				var as =document.querySelectorAll('a');
+				for(var i=0;i<as.length;i++){
+					as[i].onclick=function(){
+						ul.removeChild(this.parentNode);
+					}
+				}
+			}
+		}
+	</script>
+</html>

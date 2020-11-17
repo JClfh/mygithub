@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html,
+			body {
+				margin: 0;
+				height: 100%;
+
+			}
+
+			body {
+				background-image: url(../img/1.jpg);
+				background-repeat: no-repeat;
+				/* 不重复 */
+				background-size: 100% 100%;
+				/* 满屏 */
+				background-position: center center;
+			}
+
+			#a {
+				position: absolute;
+				width: 500px;
+				height: 260px;
+				top: 10%;
+				left: 75%;
+				margin-left: -250px;
+				height: -130px;
+				z-index: 1000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<form action="http://www.baidu.com" method="get">
+				<table width="600px" border="1px" cellspacing="0">
+					<tr height="40px">
+						<th rowspan="4" align="center">总体信息</th>
+						<td colspan="2"></td>
+
+					</tr>
+					<tr height="40px">
+						<td align="right">用户名:</td>
+						<td><input type="text" name="loginname"></td>
+					</tr>
+					<tr height="40px">
+
+						<td align="right">密码:</td>
+						<td><input type="password" name="pwd"></td>
+					</tr>
+					<tr height="40px">
+						<td colspan="2" align="center">
+							<input type="submit" value="提交" style="width: 80px;height: 30px; background-color: slateblue;">
+							<input type="reset" value="重置" style="width: 80px;height: 30px;background-color: slateblue;"">
+							</td>
+			
+					</tr>
+				</table>
+			</form>
+		</div>
+		
+
+	</body>
+</html>
